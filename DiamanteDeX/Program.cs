@@ -1,21 +1,23 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace DiamanteDeX
+﻿namespace DiamanteDeX
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-            int numeroEntrada;
-            Console.WriteLine("Diamante de X");
-            Console.WriteLine("Digite um número ímpar: ");
-            if (!int.TryParse(Console.ReadLine(), out numeroEntrada) || numeroEntrada % 2 == 0)
+            while (true)
             {
-                Console.WriteLine("Entrada inválida. Por favor, insira um número ímpar.");
-            }
+                int numeroEntrada;
+                Console.WriteLine("Diamante de X");
+                Console.WriteLine("Digite um número ímpar: ");
+                if (!int.TryParse(Console.ReadLine(), out numeroEntrada) || numeroEntrada % 2 == 0)
+                {
+                    Console.WriteLine("Entrada inválida. insira um número ímpar.");
+                }
 
-                Console.ReadLine();
+                Console.Write("\nDeseja continuar? (s/N): ");
+                string opcaoContinuar = Console.ReadLine()!.ToUpper();
+                if (opcaoContinuar != "S") break;
+            }
         }
     }
 }
