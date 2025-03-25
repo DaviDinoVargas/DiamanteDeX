@@ -7,8 +7,11 @@
             while (true)
             {
                 int numeroEntrada;
-                Console.WriteLine("Diamante de X");
-                Console.WriteLine("Digite um número ímpar: ");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("                DIAMANTE DE X");
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine("            Digite um número ímpar: ");
+                Console.WriteLine("_______________________________________________");
                 if (!int.TryParse(Console.ReadLine(), out numeroEntrada) || numeroEntrada % 2 == 0)
                 {
                     Console.WriteLine("Entrada inválida. insira um número ímpar.");
@@ -27,6 +30,7 @@
                     int espacosVazios = (numeroEntrada - i) / 2;
                     Console.WriteLine(new string(' ', espacosVazios) + new string('X', i));
                 }
+                Console.WriteLine("_______________________________________________");
                 Console.Write("\nDeseja continuar? (s/N): ");
                 string opcaoContinuar = Console.ReadLine()!.ToUpper();
                 if (opcaoContinuar != "S") break;
