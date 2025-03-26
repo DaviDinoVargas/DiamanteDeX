@@ -17,7 +17,7 @@ O **DiamanteDeX** é uma aplicação **ConsoleApp** **C#** que exibe um diamante
 
 ✅ **Validação de Entrada:**  
 - O programa impede a inserção de números **pares** ou **inválidos** *(caracteres vazios, letras e símbolos)* exibe uma mensagem de erro caso a entrada não seja aceita.  
-- O valor máximo permitido é **101** para evitar que a saída fique desformatada no console ou ocorra algum problema.  
+- O valor máximo permitido é **99** para evitar que a saída fique desformatada no console ou ocorra algum problema.  
 
 ✅ **Espaçamento Automático:**  
 - O diamante é centralizado corretamente utilizando espaços antes dos caracteres `'X'` para formar o Diamante.  
